@@ -24,7 +24,7 @@ features:
   - title: Java
     icon: fa-brands fa-java
     details: java新特性、JVM
-    link: /java/
+    link: /java/1.md
 
   - title: Python
     icon: fa-brands fa-python

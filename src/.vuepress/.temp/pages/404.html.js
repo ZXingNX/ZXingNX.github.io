@@ -1,4 +1,4 @@
-import comp from "D:/my-docs/src/.vuepress/.temp/pages/404.html.vue"
+import comp from "D:/VsCode-Project/blog/src/.vuepress/.temp/pages/404.html.vue"
 const data = JSON.parse("{\"path\":\"/404.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"layout\":\"NotFound\",\"gitInclude\":[],\"description\":\"404 Not Found\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://github.com/AHawthorn/404.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Xing's Blog\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"404 Not Found\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"WebPage\\\",\\\"name\\\":\\\"\\\",\\\"description\\\":\\\"404 Not Found\\\"}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.01,\"words\":3},\"filePathRelative\":null,\"excerpt\":\"<p>404 Not Found</p>\\n\",\"autoDesc\":true}")
 export { comp, data }
 
