@@ -47,6 +47,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: gh-pages
-          FOLDER: /.vuepress/dist
+          FOLDER: src/.vuepress/dist
           # 假设在仓库Settings/Secrets中正确设置了名为SSH_PRIVATE_KEY的密钥内容
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
