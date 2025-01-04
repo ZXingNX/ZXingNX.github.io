@@ -49,4 +49,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: src/.vuepress/dist
           # 假设在仓库Settings/Secrets中正确设置了名为SSH_PRIVATE_KEY的密钥内容
-          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
