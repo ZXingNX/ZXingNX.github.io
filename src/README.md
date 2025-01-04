@@ -2,7 +2,7 @@
 home: true
 title: Home
 icon: home
-heroImage: https://raw.githubusercontent.com/ZXingNX/images/main/blog/20250104212514417.svg
+heroImage: https://raw.githubusercontent.com/ZXingNX/images/main/blog/20250104220058848.svg
 heroText: Xing's Blog
 tagline: 天道酬勤，世界上没有真正的运气，所谓的运气就是你付出足够的努力，然后得到回报✨
 # actions:
