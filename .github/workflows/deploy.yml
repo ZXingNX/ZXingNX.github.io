@@ -14,20 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout # 检出代码
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
+
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '16'
-            
-     # 缓存 npm node_modules
+
+      # 缓存 npm node_modules
       - name: Cache dependencies
         uses: actions/cache@v3
         id: npm-cache
         with:
           path: |
-     		~/.npm
-      		**/node_modules
+            ~/.npm
+            **/node_modules
           key: ${{ runner.os }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-npm-cache-
@@ -35,20 +36,17 @@ jobs:
       # 安装依赖 npm
       - name: Install dependencies
         # 如果没有命中缓存才执行 npm install
-        if: steps.npm-cache.outputs['restore-keys'] == ''
+        if: steps.npm-cache.outputs.cache-hit!= 'true'
         run: npm install
 
-     # 运行构建脚本
+      # 运行构建脚本
       - name: Run Build Script
         run: npm run build
-        
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-        # env:
-          # 部署到 gh-pages 分支
           BRANCH: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
           FOLDER: docs/.vuepress/dist
-          # 当前仓库的密钥
+          # 假设在仓库Settings/Secrets中正确设置了名为SSH_PRIVATE_KEY的密钥内容
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
