@@ -19,7 +19,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '20'
+          node-version: '16'
 
       # 缓存 npm node_modules
       - name: Cache dependencies
@@ -41,12 +41,12 @@ jobs:
 
       # 运行构建脚本
       - name: Run Build Script
-        run: npm run docs:build
+        run: npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: gh-pages
-          FOLDER: src/.vuepress/dist
+          FOLDER: docs/.vuepress/dist
           # 假设在仓库Settings/Secrets中正确设置了名为SSH_PRIVATE_KEY的密钥内容
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}

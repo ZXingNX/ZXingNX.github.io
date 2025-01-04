@@ -29,37 +29,37 @@ features:
   - title: Python
     icon: fa-brands fa-python
     details: python基础、量化
-    link: /python
+    link: /python/
 
   - title: Go
     icon: fa-brands fa-golang
     details: go语言基础
-    link: /go
+    link: /go/
 
   - title: 架构
     icon: fa-solid fa-pen-ruler
     details: 理论知识、实战场景
-    link: /architecture
+    link: /architecture/
 
   - title: 方法论
     icon: fa-solid fa-book
     details: 基本功、通用方法沉淀
-    link: /methodology
+    link: /methodology/
 
   - title: 数据库
     icon: fa-solid fa-database
     details: MySQL、Redis
-    link: /db
+    link: /db/
 
   - title: 消息队列
     icon: fa-solid fa-rocket
     details: Kafka、RocketMQ
-    link: /mq
+    link: /mq/
 
   - title: Spring
     icon: fa-solid fa-leaf
     details: Spring、Spring Boot、Spring Cloud
-    link: /spring
+    link: /spring/
 
 
 copyright: false
