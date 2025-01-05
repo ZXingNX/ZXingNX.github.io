@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://github.com/AHawthorn/sitemap.xml
+Sitemap: https://github.com/ZXingNX/sitemap.xml
