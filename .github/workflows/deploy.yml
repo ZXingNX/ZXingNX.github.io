@@ -44,11 +44,9 @@ jobs:
         
       - name: List build output
         run: ls -R src/.vuepress/dist
-        
+
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          BRANCH: gh-pages
-          FOLDER: src/.vuepress/dist
-          # 假设在仓库Settings/Secrets中正确设置了名为SSH_PRIVATE_KEY的密钥内容
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          github_token: ${{ secrets.SSH_PRIVATE_KEY }}
+          publish_dir: src/.vuepress/dist
